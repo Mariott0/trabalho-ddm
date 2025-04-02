@@ -1,0 +1,15 @@
+31/03/2025
+Até agora foi criado as telas porem nda funcional com cadastro ainda, verificar possibilidade de cirar funcionalidades como:
+
+- dashboard gerar graficos etc
+- calendario com agendamentos reais
+- botoes na tela de agenda para agendar e dentro do agendamento botoes como remarcar, cancelar e confirmado.
+- cadastrar proffisionais e ficar guardado.
+- cadastrar pacientes e ficar guardado.
+- poder editar prontuário consultando o paciente que esteja cadastrado atraves de um barra de pesquisa.
+- ao iniciar o app, iniciar na tela de login, onde sem precisar preencher ele vai entrar para nao precisar cadastrar user.
+
+
+ajuste acima realizado, 
+
+resolver erro da tela agenda 
