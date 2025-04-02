@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Alert, TextInput } from 'react-native'; // Adicionado TextInput
-import { Calendar } from 'react-native-calendars';
+import { Calendar, DateData } from 'react-native-calendars';
 import { useState } from 'react';
 import { Picker } from '@react-native-picker/picker';
 import { useRouter } from 'expo-router';
@@ -82,7 +82,7 @@ export default function Agendar() {
       {/* Calendário */}
       <Text style={styles.label}>Data:</Text>
       <Calendar
-        onDayPress={(day) => setSelectedDate(day.dateString)}
+        onDayPress={(day: DateData) => setSelectedDate(day.dateString)}
         markedDates={{ [selectedDate]: { selected: true, selectedColor: '#4A90E2' } }}
         theme={{ selectedDayBackgroundColor: '#4A90E2', todayTextColor: '#4A90E2', arrowColor: '#4A90E2' }}
       />
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     borderRadius: 8,
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: 0,
   },
   buttonText: { color: '#FFFFFF', fontSize: 16, fontWeight: '600' },
 });

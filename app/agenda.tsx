@@ -1,5 +1,5 @@
 import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
-import { Calendar } from 'react-native-calendars';
+import { Calendar, DateData } from 'react-native-calendars';
 import { useState } from 'react';
 import { useRouter } from 'expo-router';
 
@@ -59,7 +59,7 @@ export default function Agenda() {
     <View style={styles.container}>
       <Text style={styles.title}>Agenda</Text>
       <Calendar
-        onDayPress={(day) => setSelectedDate(day.dateString)} // Removido :Day, tipagem inferida
+        onDayPress={(day: DateData) => setSelectedDate(day.dateString)}
         markedDates={{ [selectedDate]: { selected: true, selectedColor: '#4A90E2' } }}
         theme={{ selectedDayBackgroundColor: '#4A90E2', todayTextColor: '#4A90E2', arrowColor: '#4A90E2' }}
       />
