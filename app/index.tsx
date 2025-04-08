@@ -34,6 +34,11 @@ export default function HomeScreen() {
           <Text style={styles.buttonText}>Prontuário</Text>
         </TouchableOpacity>
       </Link>
+      <Link href="/dashboard" asChild>
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Dashboard</Text>
+        </TouchableOpacity>
+      </Link>
 
       {/* Botão de Logout */}
       <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
